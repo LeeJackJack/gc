@@ -1,0 +1,132 @@
+.content-wrapper {
+    padding-left: 0;
+    flex: 1;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.panel-default>.panel-heading,.panel-footer{
+    color: #333;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+@media (min-width: 992px) {
+    .container {
+        /*width: 720px;*/
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        /*width: 920px;*/
+        width: 90%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        /*width: 1170px;*/
+        width: 90%;
+    }
+}
+
+.sidebar {
+    z-index: 9999;
+    /*width: 13%;*/
+    /*position: fixed;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*top:  0;*/
+    /*left: 0;*/
+    height: 100%;
+    /*background-color: #555555;*/
+    /*box-shadow: -9px 0 11px 6px;*/
+}
+
+.sidebar .sidebar-brand {
+    line-height: 55px;
+    height: 55px;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar .sidebar-brand a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+}
+
+.sidebar li, ul{
+    list-style: none;
+}
+
+.sidebar .sidebar-body ul {
+    padding: 0;
+}
+
+.sidebar .sidebar-body li {
+    margin: 0;
+}
+
+.sidebar .sidebar-body a {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 30px;
+    display: block;
+    text-decoration: none;
+    line-height: 45px;
+    color:rgb(190,190,190) ;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 300;
+
+}
+
+.sidebar .sidebar-body a:hover {
+    text-align: center;
+    background-color: #409EFF;
+    color: #fff;
+    font-weight: 500;
+}
+
+.sidebar .sidebar-body a.first-menu.active{
+    text-align: center;
+    color: #fff;
+    background-color: #409EFF;
+    /*color: #409EFF;*/
+    /*background-color: #fff;*/
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sidebar .sidebar-body a.first-menu span{
+    float: right;
+    margin-right: 30px;
+    line-height: 40px;
+}
+
+.sidebar .sidebar-body li.second-menu-li {
+    position: relative;
+}
+
+.sidebar .sidebar-body li.second-menu-li a {
+    padding-left: 50px;
+}
+
+.sidebar .sidebar-body .glyphicon-chevron-down {
+    transition: all 0.3s;
+}
+
+.sidebar .sidebar-body .menu-expand-indicator {
+    transform: rotate(180deg);
+}
