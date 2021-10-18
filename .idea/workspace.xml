@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22139a31-c1be-4502-aee6-5de1671d231e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/speedy.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/speedy.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -805,7 +798,7 @@
       <workItem from="1634019738457" duration="5517000" />
       <workItem from="1634088245790" duration="30434000" />
       <workItem from="1634519350996" duration="3443000" />
-      <workItem from="1634566045509" duration="1530000" />
+      <workItem from="1634566045509" duration="1628000" />
     </task>
     <servers />
   </component>
