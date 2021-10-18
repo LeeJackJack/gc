@@ -6,6 +6,7 @@
         <option name="customName" value="bch" />
       </sshConfig>
       <sshConfig authType="PASSWORD" host="120.27.251.28" id="f9e5bbf9-350d-48b5-bf3c-3a36d0b937d5" port="22" nameFormat="DESCRIPTIVE" username="root" />
+      <sshConfig authType="PASSWORD" host="120.24.97.109" id="6c4b9b88-3419-4447-9b03-3b3ebe2b5685" port="22" nameFormat="DESCRIPTIVE" username="root" />
     </configs>
   </component>
 </project>

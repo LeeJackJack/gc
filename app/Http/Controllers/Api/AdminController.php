@@ -2,14 +2,88 @@
 
     namespace App\Http\Controllers\Api;
 
-    use App\Http\Controllers\Controller;
+    use App\Http\Controllers\Admin\BaseController;
     use Illuminate\Http\Request;
     use Illuminate\Support\Collection;
     use Speedy;
     use Illuminate\Support\Facades\Storage;
 
-    class AdminController extends Controller
+    class AdminController extends BaseController
     {
+
+        public function saveTour( Request $request)
+        {
+            $data = json_decode($request->get( 'data' ));
+            $hasId = isset($data->id) ? '1' : '0';
+            $params = [
+                'name'       => $data->name ,
+                'hour'       => $data->hour ,
+                'spots'       => $data->spots ,
+                'distance'       => $data->distance ,
+                'route'       => $data->route ,
+                'polyline'       => $data->polyline ,
+                'valid' => '1',
+            ];
+
+            $tours = [];
+            if ($hasId)
+            {
+                $result = Speedy::getModelInstance( 'tour' )->where( 'id' , $data->id )->first()->update( $params );
+            }else
+            {
+                $result = Speedy::getModelInstance( 'tour' )->create( $params );
+            }
+
+            if ($result)
+            {
+                $tours = Speedy::getModelInstance( 'tour' )->where( 'valid' , '1' )->get();
+                foreach ($tours as $t)
+                {
+                    $arr = [];
+                    foreach ( json_decode( $t->route ) as $p )
+                    {
+                        $v = Speedy::getModelInstance( 'place' )->where( 'id' , $p )->first();
+                        array_push( $arr , $v );
+                    }
+                    $t->setAttribute( 'place' , $arr );
+                    $t->route = json_decode( $t->route );
+                    $t->polyline = json_decode( $t->polyline );
+                }
+            }
+
+            return response()->json( [
+                'return' => $tours ,
+                'msg' => '信息更新成功',
+                'result' => 'success',
+            ] );
+        }
+
+        public function deleteTour( Request $request)
+        {
+            $id = $request->get( 'id' );
+            Speedy::getModelInstance( 'tour' )->where( 'id' , $id )->first()->update( [
+                'valid' => '0',
+            ]);
+            $tours = Speedy::getModelInstance( 'tour' )->where( 'valid' , '1' )->get();
+            foreach ($tours as $t)
+            {
+                $arr = [];
+                foreach ( json_decode( $t->route ) as $p )
+                {
+                    $v = Speedy::getModelInstance( 'place' )->where( 'id' , $p )->first();
+                    array_push( $arr , $v );
+                }
+                $t->setAttribute( 'place' , $arr );
+                $t->route = json_decode( $t->route );
+                $t->polyline = json_decode( $t->polyline );
+            }
+
+            return response()->json( [
+                'return' => $tours ,
+                'msg' => '信息删除成功',
+                'result' => 'success',
+            ] );
+        }
 
         /**
          * 根据用户输入公司名称查找公司...
@@ -22,14 +96,7 @@
          */
         public function comSearch( Request $request )
         {
-            $com_name = $request->get( 'com_name' );
 
-            $company = Speedy::getModelInstance( 'company' )->where( 'valid' , '1' )->where( 'name' , 'like' ,
-                '%' . $com_name . '%' )->get();
-
-            return response()->json( [
-                'company' => $company ,
-            ] );
         }
 
         /**

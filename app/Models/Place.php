@@ -16,6 +16,7 @@ class Place extends Model
     protected $fillable = [
         'name' ,
         'pic' ,
+        'illustrator',
         'icon',
         'icon_select',
         'longitude: ',
@@ -24,6 +25,10 @@ class Place extends Model
         'introduction',
         'address',
         'valid',
+        'level',
+        'tag_first',
+        'tag_second',
+        'ticket',
     ];
 
     /**

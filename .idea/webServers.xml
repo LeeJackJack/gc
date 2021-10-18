@@ -3,14 +3,21 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="de15a78f-6564-404a-811c-100274a63eb3" name="bch" url="http://120.24.97.109">
-        <fileTransfer rootFolder="/usr/local/bch-test" accessType="SFTP" host="118.31.250.188" port="22" sshConfigId="d3b3d426-7561-4ac9-b58f-62dffdf7682e" sshConfig="bch">
+        <fileTransfer rootFolder="/usr/local/bch-test" accessType="SFTP" host="120.24.97.109" port="22" sshConfigId="6c4b9b88-3419-4447-9b03-3b3ebe2b5685" sshConfig="root@120.24.97.109:22 password">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="1c6af370-06be-461b-b1c2-d41d54e22041" name="test">
         <fileTransfer accessType="SFTP" host="120.27.251.28" port="22" sshConfigId="f9e5bbf9-350d-48b5-bf3c-3a36d0b937d5" sshConfig="root@120.27.251.28:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b1bb299c-04a6-4edb-bcde-e62c81a2ab76" name="gc_test">
+        <fileTransfer accessType="SFTP" host="120.24.97.109" port="22" sshConfigId="6c4b9b88-3419-4447-9b03-3b3ebe2b5685" sshConfig="root@120.24.97.109:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

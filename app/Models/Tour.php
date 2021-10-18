@@ -16,10 +16,11 @@ class Tour extends Model
     protected $fillable = [
         'name' ,
         'hour' ,
-        'spots: ',
-        'distance: ',
+        'spots',
+        'distance',
         'route',
         'valid',
+        'polyline',
     ];
 
     /**

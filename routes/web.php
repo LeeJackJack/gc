@@ -301,31 +301,8 @@
     Route::group( [ 'middleware' => 'auth' , 'prefix' => 'api/' ] , function()
     {
         $namespace = 'Api\\';
-        Route::get( 'delContactInfo' , $namespace . 'AdminController@delContactInfo' );
-        Route::get( 'createContact' , $namespace . 'AdminController@createContact' );
-
-        //2019-9-24添加 上传封面接口
-        Route::any( 'upLoadCoverPic' , $namespace . 'AdminController@upLoadCoverPic' );
-        //2019-9-27添加 上传文件接口
-        Route::any( 'upLoadResume' , $namespace . 'AdminController@upLoadResume' );
-
-        //2020-3-10添加查询政府联系人接口
-        Route::get( 'searchGovernment' , $namespace . 'AdminController@searchGovernment' );
-        //2020-3-10删除政府联系人接口
-        Route::get( 'delGovernment' , $namespace . 'AdminController@delGovernment' );
-        //2020-3-10修改政府联系人接口
-        Route::get( 'editGovernment' , $namespace . 'AdminController@editGovernment' );
-        //2020-3-11获取热门应聘企业排行
-        Route::get( 'getCompanyData' , $namespace . 'AdminController@getCompanyData' );
-        //2020-3-11获取热门职位排行
-        Route::get( 'getJobData' , $namespace . 'AdminController@getJobData' );
-        //2020-3-16获取区域高校
-        Route::get( 'searchSchool' , $namespace . 'AdminController@searchSchool' );
-        //2020-3-16获取高校在读博士
-        Route::get( 'searchSchoolPhd' , $namespace . 'AdminController@searchSchoolPhd' );
-        //2020-3-17获取高校在读博士
-        Route::get( 'editPhd' , $namespace . 'AdminController@editPhd' );
-
+        Route::get( 'saveTour' , $namespace . 'AdminController@saveTour' );
+        Route::get( 'deleteTour' , $namespace . 'AdminController@deleteTour' );
     } );
 
 

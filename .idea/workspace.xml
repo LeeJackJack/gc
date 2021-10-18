@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22139a31-c1be-4502-aee6-5de1671d231e" name="Default" comment="" />
+    <list default="true" id="22139a31-c1be-4502-aee6-5de1671d231e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/circle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/place/index-vue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MapController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MapController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Place.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Place.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_09_25_143045_create_places_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_09_25_143045_create_places_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/map/index-vue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/map/index-vue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -416,7 +438,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/speedy/admin/map" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/speedy/admin/place" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -429,18 +451,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laravel\QuanZhouGuCheng\resources\views\vendor\speedy\admin\place" />
       <recent name="D:\laravel\QuanZhouGuCheng\resources\views\vendor\speedy\admin\map" />
       <recent name="D:\laravel\BoCuHui\public\pic" />
       <recent name="D:\laravel\BoCuHui\resources\views\vendor\speedy\admin\government" />
       <recent name="D:\laravel\BoCuHui\app\Http\Controllers\Fix" />
-      <recent name="D:\laravel\BoCuHui\resources\views\vendor\speedy\admin\requirement" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laravel\QuanZhouGuCheng\public" />
+      <recent name="D:\laravel\QuanZhouGuCheng\public\pic" />
       <recent name="D:\laravel\BoCuHui\app\Models" />
       <recent name="D:\laravel\BoCuHui\resources\views" />
       <recent name="D:\laravel\BoCuHui\app\Http\Controllers\Api" />
-      <recent name="D:\laravel\BoCuHui\app\Models\Logs" />
-      <recent name="D:\laravel\BoCuHui\resources\views\vendor\speedy\admin\project" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -788,7 +810,13 @@
       <workItem from="1632470377028" duration="3738000" />
       <workItem from="1632550870794" duration="6207000" />
       <workItem from="1632576435495" duration="6223000" />
-      <workItem from="1632619473927" duration="3778000" />
+      <workItem from="1632619473927" duration="14516000" />
+      <workItem from="1632708424127" duration="1862000" />
+      <workItem from="1632814483199" duration="3670000" />
+      <workItem from="1633747347160" duration="12628000" />
+      <workItem from="1633914332835" duration="16980000" />
+      <workItem from="1634019738457" duration="5517000" />
+      <workItem from="1634088245790" duration="30434000" />
     </task>
     <servers />
   </component>
