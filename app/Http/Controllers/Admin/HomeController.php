@@ -30,7 +30,7 @@
         public function index()
         {
 
-            return view( 'vendor.speedy.admin.map.index-vue' );
+            return view( 'vendor.speedy.admin.home' );
 
         }
     }

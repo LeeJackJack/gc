@@ -101,13 +101,7 @@
     Route::group( [ 'middleware' => 'auth' , 'prefix' => 'admin' ] , function()
     {
         $namespace = 'Admin\\';
-        Route::get( '/home' , $namespace . 'HomeController@index' )->name( 'admin.admin.home' );
-    } );
-
-    Route::group( [ 'middleware' => 'auth' , 'prefix' => 'admin' ] , function()
-    {
-        $namespace = 'Admin\\';
-        Route::get( '/' , $namespace . 'UpdateLogController@index' );
+        Route::get( '/' , $namespace . 'HomeController@index' )->name( 'admin.admin.home' );
     } );
 
     Route::group( [ 'middleware' => 'auth' , 'prefix' => 'api/' ] , function()
