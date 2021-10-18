@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Lindell') }}</title>
 
     <!-- Styles -->
-    <link href="{{asset('bch_logo.ico')}}" rel="SHORTCUT ICON"/>
+{{--    <link href="{{asset('bch_logo.ico')}}" rel="SHORTCUT ICON"/>--}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
@@ -91,7 +91,7 @@
     <div style="width: auto;position: fixed;z-index: 999;">
         @include('vendor.speedy.partials.sidebar-vue')
     </div>
-    <div id="mainContent" style="width: 100%;padding-left: 205px;">
+    <div id="mainContent" style="width: 100%;padding-left: 105px;">
         <div class="content-wrapper">
             <nav class="navbar navbar-default navbar-static-top" style="border-color: #ededed;">
                 <div class="container">
@@ -156,34 +156,34 @@
                         </form>
 
                         {{--未读提示模块--}}
-                        <ul class="nav navbar-nav navbar-right" style="margin-right: 3%;">
-                            <div id="badgeGroup">
-                                <template>
-                                    <el-badge :value="recommends" class="item">
-                                        <el-button size="small" @click="goToRecommend" type="primary" plain>
-                                            <i class="el-icon-message-solid"></i> 推荐
-                                        </el-button>
-                                    </el-badge>
-                                    <el-badge :value="project" class="item">
-                                        <el-button size="small" @click="goToProject" type="primary" plain>
-                                            <i class="el-icon-message-solid"></i> 项目感兴趣
-                                        </el-button>
-                                    </el-badge>
-                                </template>
-                            </div>
-                        </ul>
+{{--                        <ul class="nav navbar-nav navbar-right" style="margin-right: 3%;">--}}
+{{--                            <div id="badgeGroup">--}}
+{{--                                <template>--}}
+{{--                                    <el-badge :value="recommends" class="item">--}}
+{{--                                        <el-button size="small" @click="goToRecommend" type="primary" plain>--}}
+{{--                                            <i class="el-icon-message-solid"></i> 推荐--}}
+{{--                                        </el-button>--}}
+{{--                                    </el-badge>--}}
+{{--                                    <el-badge :value="project" class="item">--}}
+{{--                                        <el-button size="small" @click="goToProject" type="primary" plain>--}}
+{{--                                            <i class="el-icon-message-solid"></i> 项目感兴趣--}}
+{{--                                        </el-button>--}}
+{{--                                    </el-badge>--}}
+{{--                                </template>--}}
+{{--                            </div>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
             </nav>
             @yield('content')
         </div>
         <div class="content-footer">
-            <div class="copy-right">
-                Copyright © 2020 人才优服技术部出品
-            </div>
-            <div class="lineWrapper">
-                <div class="moving-line"></div>
-            </div>
+{{--            <div class="copy-right">--}}
+{{--                Copyright © 2020 人才优服技术部出品--}}
+{{--            </div>--}}
+{{--            <div class="lineWrapper">--}}
+{{--                <div class="moving-line"></div>--}}
+{{--            </div>--}}
         </div>
     </div>
 </div>
@@ -231,7 +231,7 @@
                     },400)
                 }else
                 {
-                    document.getElementById('mainContent').style.paddingLeft = '210px';
+                    document.getElementById('mainContent').style.paddingLeft = '105px';
                     setTimeout(function () {
                         let height = document.getElementById('mainContent').offsetHeight;
                         let sHeight = document.documentElement.clientHeight;

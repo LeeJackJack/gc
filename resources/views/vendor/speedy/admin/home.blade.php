@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        hi
+        欢迎使用本系统！
     </div>
 @endsection

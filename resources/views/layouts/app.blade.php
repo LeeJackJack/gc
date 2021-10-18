@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{asset('bch_logo.ico')}}" rel="SHORTCUT ICON" />
+{{--    <link href="{{asset('bch_logo.ico')}}" rel="SHORTCUT ICON" />--}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,9 +38,9 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
                     <li>
-                        <img src="{{asset('bch_logo.png')}}" alt=""
-                             style="width: 50px;border-radius: 50%;margin-right: 5px;">
-                        <span style="font-size: 20px;font-weight: bold;">{{ env('APP_NAME') }}信息管理系统</span>
+{{--                        <img src="{{asset('bch_logo.png')}}" alt=""--}}
+{{--                             style="width: 50px;border-radius: 50%;margin-right: 5px;">--}}
+                        <span style="font-size: 20px;font-weight: bold;">泉州古城旅游信息管理系统</span>
                     </li>
                 </ul>
 

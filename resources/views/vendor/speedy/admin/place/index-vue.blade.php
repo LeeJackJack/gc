@@ -8,27 +8,13 @@
                 <el-col :span="22" :offset=1>
                     <el-container>
                         <el-header>
-                            <form action="{{route('admin.company.index')}}">
-                                <div class="search-input">
-                                    <el-button
-                                        size="medium"
-                                        type="primary"
-                                        style="margin-right: 20px;"
-                                        @click="handleCreate">
-                                        创建
-                                        <i class="el-icon-upload el-icon--right"></i></el-button>
-                                    <el-divider direction="vertical"></el-divider>
-                                    <el-input
-                                        size="medium"
-                                        style="margin-left: 20px;"
-                                        name="com_name"
-                                        placeholder="企业名称..."
-                                        v-model="searchName">
-                                    </el-input>
-                                    <el-button size="medium" type="primary" native-type="submit">搜索<i
-                                            class="el-icon-search el-icon--right"></i></el-button>
-                                </div>
-                            </form>
+                            <el-button
+                                size="medium"
+                                type="primary"
+                                style="margin-right: 20px;"
+                                @click="handleCreate">
+                                创建
+                                <i class="el-icon-upload el-icon--right"></i></el-button>
                         </el-header>
                         <el-main>
                             <el-table
@@ -43,8 +29,7 @@
                                 {{--列表项目--}}
                                 <el-table-column
                                     align="left"
-                                    label="企业名称"
-                                    width="350">
+                                    label="景点名称">
                                     <template slot-scope="scope">
                                         {{--<i style="color: #409EFF" class="el-icon-office-building"></i>--}}
                                         <span class="mainItem">@{{ scope.row.name }}</span>
@@ -52,56 +37,45 @@
                                 </el-table-column>
 
                                 <el-table-column
-                                    label="企业规模">
+                                    label="门票价格">
                                     <template slot-scope="scope">
                                         {{--<i style="color: #409EFF" class="el-icon-s-flag"></i>--}}
-                                        <span>@{{ scope.row.scale }}</span>
+                                        <span>@{{ scope.row.ticket }}</span>
                                     </template>
                                 </el-table-column>
 
                                 <el-table-column
-                                    label="企业属性">
+                                    label="景区级别">
                                     <template slot-scope="scope">
-                                        <el-tag type="primary">@{{ scope.row.property }}</el-tag>
+                                        <el-tag type="primary">@{{ scope.row.level }}</el-tag>
                                     </template>
                                 </el-table-column>
 
                                 <el-table-column
-                                    label="企业类型">
+                                    label="标签1">
                                     <template slot-scope="scope">
-                                        <el-tag type="success">@{{ scope.row.type }}</el-tag>
+                                        <el-tag type="success">@{{ scope.row.tag_first }}</el-tag>
                                     </template>
                                 </el-table-column>
 
                                 <el-table-column
-                                    label="录入时间">
+                                    label="标签2">
+                                    <template slot-scope="scope">
+                                        <el-tag type="success">@{{ scope.row.tag_second }}</el-tag>
+                                    </template>
+                                </el-table-column>
+
+                                <el-table-column
+                                    label="创建时间">
                                     <template slot-scope="scope">
                                         <i class="el-icon-time"></i>
                                         <span> @{{ scope.row.created_at }}</span>
                                     </template>
                                 </el-table-column>
 
-                                {{--<el-table-column--}}
-                                {{--label="是否上市"--}}
-                                {{--prop="is_ipo"--}}
-                                {{--:filters="[{ text: '已上市', value: '1' }, { text: '未上市', value: '0' }]"--}}
-                                {{--:filter-method="ipoFilterTag"--}}
-                                {{--filter-placement="bottom-end">--}}
-                                {{--<template slot-scope="scope">--}}
-                                {{--<el-tag size="medium" v-if="scope.row.is_ipo=='1'" type="success">已上市--}}
-                                {{--</el-tag>--}}
-                                {{--<el-tag size="medium" v-else type="info">未上市</el-tag>--}}
-                                {{--</template>--}}
-                                {{--</el-table-column>--}}
 
                                 <el-table-column label="操作">
                                     <template slot-scope="scope">
-                                        <el-button
-                                            size="mini"
-                                            type="info"
-                                            circle
-                                            @click="handleInfo(scope.$index, scope.row)" icon="el-icon-info">
-                                        </el-button>
                                         <el-button
                                             size="mini"
                                             type="primary"
@@ -164,24 +138,19 @@
     </style>
 
     <script>
-        let companyIndex = new Vue({
-            el: '#companyIndex',
+        let placeIndex = new Vue({
+            el: '#placeIndex',
             data: {
-                searchName: '{!! $com_name !!}',
                 loading: true,
                 total: 1000,
                 currentPage: 1,
                 pagesize: 10,
-                tableData: {!! $companies !!},
+                tableData: {!! $places !!},
             },
             compute: {
                 //
             },
             methods: {
-                //是否上市筛选
-                ipoFilterTag(value, row) {
-                    return row.is_ipo === value;
-                },
                 //分页
                 current_change(currentPage) {
                     this.currentPage = currentPage;
@@ -189,27 +158,22 @@
                 //创建按钮
                 handleCreate() {
                     this.loading = true;
-                    window.location.href = '{{ route('admin.company.create') }}';
-                },
-                //详情按钮
-                handleInfo(index, row) {
-                    this.loading = true;
-                    window.location.href = '{{ route('admin.company.index') }}' + '/' + row.ids + '?';
+                    window.location.href = '{{ route('admin.place.create') }}';
                 },
                 //编辑按钮
                 handleEdit(index, row) {
                     this.loading = true;
-                    window.location.href = '{{route('admin.company.index')}}' + '/' + row.ids + '/edit';
+                    window.location.href = '{{route('admin.place.index')}}' + '/' + row.id + '/edit';
                 },
                 //删除按钮
                 handleDelete(index, row)
                 {
-                    this.$confirm('删除企业会把企业发布的职位一并删除，是否继续？', '提示', {
+                    this.$confirm('删除景点可能会影响线路展示，是否继续？', '提示', {
                         confirmButtonText: '确定',
                         cancelButtonText: '取消',
                         type: 'warning'
                     }).then(() => {
-                        document.getElementById('delete-form').action = '{{ route('admin.company.index') . "/" }}' + row.ids;
+                        document.getElementById('delete-form').action = '{{ route('admin.place.index') . "/" }}' + row.id;
                         document.getElementById('delete-form').submit();
                     }).catch(() => {
                         this.$message({

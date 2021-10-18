@@ -221,7 +221,58 @@
          *
          * @todo 需与文件上传接口整合为统一接口
          */
-        public function upLoadCoverPic( Request $request )
+        public function upLoadPlacePic( Request $request )
+        {
+            $file    = '';
+            $payload = $request->all();
+            foreach ( $payload as $key => $value )
+            {
+                if ( $key == 'file' )
+                {
+                    $file = $this->uploadFile( $value );
+                }
+            }
+
+            return response()->json( [
+                'result' => $file ,
+            ] );
+        }
+
+        public function upLoadPlaceIcon( Request $request )
+        {
+            $file    = '';
+            $payload = $request->all();
+            foreach ( $payload as $key => $value )
+            {
+                if ( $key == 'file' )
+                {
+                    $file = $this->uploadFile( $value );
+                }
+            }
+
+            return response()->json( [
+                'result' => $file ,
+            ] );
+        }
+
+        public function upLoadPlaceIconSelect( Request $request )
+        {
+            $file    = '';
+            $payload = $request->all();
+            foreach ( $payload as $key => $value )
+            {
+                if ( $key == 'file' )
+                {
+                    $file = $this->uploadFile( $value );
+                }
+            }
+
+            return response()->json( [
+                'result' => $file ,
+            ] );
+        }
+
+        public function upLoadPlaceIllustrator( Request $request )
         {
             $file    = '';
             $payload = $request->all();
