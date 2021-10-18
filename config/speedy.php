@@ -276,6 +276,10 @@
 //                'display' => '更新日志' ,
 //                'url'     => '/admin/update_log' ,
 //            ] ,
+            'place'   => [
+                'display' => '景点' ,
+                'url'     => '/admin/place' ,
+            ] ,
             'map'   => [
                 'display' => '地图' ,
                 'url'     => '/admin/map' ,
@@ -347,6 +351,7 @@
 //            'sp'           => 'el-icon-document-checked' ,
 //            'update_log'   => 'el-icon-finished' ,
 //            'requirement' => 'el-icon-s-help' ,
+            'place' => 'el-icon-coordinate' ,
             'map' => 'el-icon-s-tools' ,
         ] ,
 

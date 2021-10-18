@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22139a31-c1be-4502-aee6-5de1671d231e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/circle@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/place/index-vue.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MapController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MapController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Place.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Place.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_09_25_143045_create_places_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_09_25_143045_create_places_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/map/index-vue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/map/index-vue.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/speedy.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/speedy.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -817,6 +804,8 @@
       <workItem from="1633914332835" duration="16980000" />
       <workItem from="1634019738457" duration="5517000" />
       <workItem from="1634088245790" duration="30434000" />
+      <workItem from="1634519350996" duration="3443000" />
+      <workItem from="1634566045509" duration="1530000" />
     </task>
     <servers />
   </component>

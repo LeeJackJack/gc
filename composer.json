@@ -18,7 +18,6 @@
         "jacobcyl/ali-oss-storage": "dev-master",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "maatwebsite/excel": "^3.1",
         "menthe/aliyun-ueditor": "^0.1.2",
         "overtrue/laravel-lang": "~3.0",
         "overtrue/wechat": "~4.0"
