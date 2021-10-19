@@ -29,8 +29,6 @@
          */
         public function index()
         {
-
             return view( 'vendor.speedy.admin.home' );
-
         }
     }

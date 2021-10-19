@@ -257,6 +257,8 @@
                 marker:[],
                 latitude:0,
                 longitude:0,
+                originLat:24.913156,
+                originLng:118.585448,
             },
             compute: {
                 //
@@ -266,7 +268,7 @@
                     let _this = this;
                     //地图初始化函数，本例取名为init，开发者可根据实际情况定义
                     //定义地图中心点坐标
-                    let center = new TMap.LatLng(24.913156, 118.585448)
+                    let center = new TMap.LatLng(_this.originLat, _this.originLng)
                     //定义map变量，调用 TMap.Map() 构造函数创建地图
                     let map = new TMap.Map(document.getElementById('mapIndex'), {
                         center: center,//设置地图中心点坐标
@@ -382,14 +384,19 @@
                 //
             },
             mounted: function () {
-                this.initMap();
-                this.loading = false;
                 this.pic = this.form.pic;
                 this.icon = this.form.icon;
                 this.icon_select = this.form.icon_select;
                 this.illustrator = this.form.illustrator;
                 this.longitude = this.form.longitude;
                 this.latitude = this.form.latitude;
+                if(JSON.stringify(this.form) != '{}')
+                {
+                    this.originLat = this.form.latitude;
+                    this.originLng = this.form.longitude;
+                }
+                this.initMap();
+                this.loading = false;
                 // console.log();
             },
             destroy: function () {

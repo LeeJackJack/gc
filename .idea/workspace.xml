@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22139a31-c1be-4502-aee6-5de1671d231e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a98ca27-9237-42d5-989a-92c430d9cc7f/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7b85b72-a7e8-4729-b4de-c91bbe50568d/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/009-open-book-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/headhunterBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/loading-circle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/loading_jump.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/loading_rocket.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/loading_sleeping.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pic/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FoShanActitvity/detail.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FoShanActitvity/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FoShanActitvity/input.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FoShanActitvity/likeInput.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/activity_show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/haiZhu.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ledShowCompany.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ledShowProject.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showQrCode.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/testLoading.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/place/edit-vue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/speedy/admin/place/edit-vue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/writerQrCode.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -800,7 +831,8 @@
       <workItem from="1634019738457" duration="5517000" />
       <workItem from="1634088245790" duration="30434000" />
       <workItem from="1634519350996" duration="3443000" />
-      <workItem from="1634566045509" duration="18231000" />
+      <workItem from="1634566045509" duration="18574000" />
+      <workItem from="1634625057823" duration="2664000" />
     </task>
     <servers />
   </component>
